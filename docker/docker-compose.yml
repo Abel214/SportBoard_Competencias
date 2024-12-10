@@ -4,6 +4,11 @@ services:
         extends:
             file: .api-gateway/docker-compose.override.yml
             service: api-gateway
+    
+    ms2-competencies:
+    extends:
+      file: ./backend/ms2-competencies/docker-compose.override.yml
+      service: ms2-competencies
 
 networks:
     sportboard:
